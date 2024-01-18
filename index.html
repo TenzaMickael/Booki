@@ -2,22 +2,89 @@
 <html lang="fr">
 
 <head>
+     <!-- Encodage -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booki</title>
+
+    <!-- Feuilles de styles CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+  
+    <!-- Import de la police Raleway (google fonts)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome-->
+    <script src="https://kit.fontawesome.com/56737a2dfb.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Affichage est la même que la largeur de l'écran -->
+    <meta name="viewport" content="width=device-width"/>
+
+     <!-- lien vers logo dans l'onglet -->
+     <link rel="icon" type="image/png" href="./images/logo/Booki.png"> 
+
+     <!-- Titre dans l'onglet -->
+    <title>Booki</title>
+    
+    
+ 
 </head>
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+             <!-- logo Booki à gauche -->
+            <img src="/images/logo/Booki@3x.png" alt="logo Booki"/>
+            <!-- menu à droite -->
+            <nav>
+                <ul>
+                    <li class="menu_espace_li_gauche"><a href="#hebergement">Hébergements</a></li>
+                    <li><a href="#activites">Activités </a></li>
+                </ul>
+            </nav>
+        </header>
+
         <main>
+            <!-- SECTION : Recherche -->
+            <section class="section_recherche">
+                <h2>Trouvez votre hébergement pour des vacances de rêve </h2>
+                <p>En plein centre-ville ou en pleine nature </p>
+                
+                <!-- Barre de recherche déjà remplie avec un logo à gauche et un bouton à droite -->
+                <form>
+                    <article class="recherche">
+                        <!-- Logo -->
+                        <i class="fas fa-map-marker-alt"></i>
+                        <!-- Barre de recherche préremplie -->
+                        <label>
+                            <input type="search" id="recherche-barre" name="q" value="Marseille, France" 
+                            placeholder="Où voulez-vous aller ?">
+                        </label>
+                        <!-- Bouton de recherche -->
+                        <button type="submit" > 
+                            <span class="bouton1">Rechercher</span> 
+                            <span class="bouton2"><i class="fas fa-search"></i></span> 
+                        </button>
+                    </article>
+    
+                    <!-- Filtres -->
+                    <article class="filtre">
+                        <p>Filtres </p>
+                        <button class="filtre-item"><i class="fas fa-money-bill-wave"></i> Economique </button> 
+                        <button class="filtre-item"><i class="fas fa-child"></i> Familial </button>
+                        <button class="filtre-item"><i class="fas fa-heart"></i> Romantique </button>
+                        <button class="filtre-item"><i class="fas fa-dog"></i> Animaux autorisés </button>
+                    </div>
+                </form>
+    
+                <!-- Information -->
+                <p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville </p>
+            </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
