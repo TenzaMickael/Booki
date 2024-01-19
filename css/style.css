@@ -87,6 +87,7 @@ form{
 .recherche{
     display: flex;
         margin-top: 15px;
+            margin-bottom: 26px;
 }
 
 #recherche-barre{
@@ -112,7 +113,7 @@ form{
     width: 130px;
         height: 40px;
             border: 1px solid var(--blue);
-                background: #0065FC;
+                background: var(--blue);
                     border-radius: 0 15px 15px 0;
                         cursor: pointer;
  }
@@ -132,8 +133,62 @@ form{
  /* Filtres */
 
  .filtre{
-    
+    display: flex;
+        margin-top: 10px;
+            align-items: center;
+                flex-wrap: wrap;             
  }
+
+ .filtre p {
+    display: flex;
+    font-weight: bold;
+        margin: auto 18px auto 0px ;  
+ }
+
+ .filtre-item{
+    font-weight: bold;
+        background-color: var(--white);
+            border: 2px solid var(--grey);
+                border-radius: 20px;
+                    margin-right: 15px;
+                        padding: 0 19px 0 0;
+                            cursor: pointer;
+ }
+
+ .filtre-item:hover {
+    background-color: var(--blue_light);
+        border-color: var(--blue);
+            color: black;
+                box-shadow: 10px 10px 10px #dad8d8;
+ }
+
+ .filtre-item i{
+    font-size: 18px;
+        color: var(--blue);
+            border-radius: 50%;
+                margin-left: 5px;
+                    padding: 15px;
+                        margin-right: -8px;
+ }
+
+ /* Info */
+ .info{
+    margin-top: 28px;
+ }
+ .fa-info {
+    font-size: 16px;
+    color: #0065FC;
+    border: 2px solid var(--grey);
+    text-align: center;
+    padding-top: 0.8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+ }
+ 
+  
+  
+
 
 
 
